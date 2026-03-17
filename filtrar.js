@@ -1,16 +1,21 @@
-const usuarios = [
+const usuarios = [ //cria variavel que vai armazenar uma lista(array)
     { nome:"Carlos",idade: 32 },
     { nome:"Ana", idade: 28 },
     { nome: "Felipe", idade: 40}
 ];
 
-// Encontrando um objeto
+// Encontrando um objeto - find vai buscar - === exatamente igual
 const ana = usuarios.find(usuario => usuario.nome ==="Ana");
 console.log(ana);
 
 //Filtrando objetos
 const usuariosAcimade30 = usuarios.filter(usuario => usuario.idade > 30);
 console.log(usuarioAcimade30)
+
 // Ordenando objetos por idade
 const usuariosOrdenadosPoridade= usuarios.sort((a,b) => a.idade - b.idade);
+console.log(usuariosOrdenadosPorIdade);
+
+// Ordenando objetos por idades 2
+const usuariosOrdenadosPoridades2= usuarios.sort((a,b) => b.idade - a.idade);
 console.log(usuariosOrdenadosPorIdade);
